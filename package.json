@@ -1,0 +1,22 @@
+{
+  "name": "thai-detect",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comdevx/thai-detect.git"
+  },
+  "author": "",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/comdevx/thai-detect/issues"
+  },
+  "homepage": "https://github.com/comdevx/thai-detect#readme",
+  "description": "",
+  "dependencies": {
+    "thai-cut-slim": "^1.2.0"
+  }
+}
