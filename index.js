@@ -9,4 +9,5 @@ const analyze = require('./src/analyze')
 
 exports.verb = (v) => detect(v, 'verb')
 exports.noun = (v) => detect(v, 'noun')
+exports.pronoun = (v) => detect(v, 'pronoun')
 exports.sentence = (v) => analyze(v)

@@ -5,6 +5,7 @@
 | file | detail |
 | ------ | ------ |
 | proper_noun.txt | คำนาม |
+| pronoun.txt | คำสรรพนาม |
 | verb.txt | คำกริยา |
 | word.txt | คำใช้ในการวิเคราะห์ข้อความ |
 | remove.txt | คำที่ต้องตัดเพื่อใช้ในการวิเคราะห์ข้อความ |
@@ -32,6 +33,15 @@ const thaiDetect = require('../')
 thaiDetect.noun('โครเอเชีย') # returns { word: 'โครเอเชีย', noun: true }
 or
 thaiDetect.noun('โครเอเชียง') # returns { word: 'โครเอเชียง', noun: false }
+```
+
+เช็คคำ ข้า ว่าเป็นคำสรรพนามหรือไม่ โดย noun จะคืนค่าเป็น true หรือ false
+```nodejs
+const thaiDetect = require('../')
+
+thaiDetect.pronoun('ข้า') # returns { word: 'ข้า', pronoun: true }
+or
+thaiDetect.pronoun('ข้าง') # returns { word: 'ข้าง', pronoun: false }
 ```
 
 วิเคราะห์ประโยคโดยเช็คว่าประโยคเป็นรูปแบบไหน โดยจะคืนค่ามาเป็น Object แล้วตามด้วยฟิลด์ที่บอกว่่าอารมณ์ไปทางไหน (เยอะสุดจะอยู่บน)
