@@ -13,14 +13,14 @@ require.extensions['.txt'] = function (module, filename) {
 
 module.exports = (v) => {
 
-    let rem = require("./remove.txt")
+    let rem = require("../data/remove.txt")
     rem = rem.split('\n')
     let rex = ''
     rem.forEach((r, i) => rex += i === 0 ? r : '|' + r)
     rex = new RegExp(rex)
     v = v.replace(rex, '')
 
-    let word = require("./word.txt")
+    let word = require("../data/word.txt")
     word = word.split('\n')
     word = word.map(s => s.split(' '))
     v = v.replace(/\s/g, '')

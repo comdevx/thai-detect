@@ -12,10 +12,10 @@ require.extensions['.txt'] = function (module, filename) {
 
 module.exports = (v, t) => {
 
-    let verb = require("./verb.txt")
+    let verb = require("../data/verb.txt")
     verb = verb.split('\n')
 
-    let noun = require("./proper_noun.txt")
+    let noun = require("../data/proper_noun.txt")
     noun = noun.split('\n')
 
     const l = t === 'verb' ? verb : noun
