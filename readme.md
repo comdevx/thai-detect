@@ -26,7 +26,7 @@ or
 thaiDetect.verb('ทรงเครื่อ') # returns { word: 'ทรงเครื่อ', verb: false }
 ```
 
-เช็คคำ ทรงเครื่อง ว่าเป็นคำนามหรือไม่ โดย noun จะคืนค่าเป็น true หรือ false
+เช็คคำ โครเอเชีย ว่าเป็นคำนามหรือไม่ โดย noun จะคืนค่าเป็น true หรือ false
 ```nodejs
 const thaiDetect = require('../')
 
