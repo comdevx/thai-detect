@@ -35,7 +35,7 @@ or
 thaiDetect.noun('โครเอเชียง') # returns { word: 'โครเอเชียง', noun: false }
 ```
 
-เช็คคำ ข้า ว่าเป็นคำสรรพนามหรือไม่ โดย noun จะคืนค่าเป็น true หรือ false
+เช็คคำ ข้า ว่าเป็นคำสรรพนามหรือไม่ โดย pronoun จะคืนค่าเป็น true หรือ false
 ```nodejs
 const thaiDetect = require('../')
 
