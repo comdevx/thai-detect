@@ -43,6 +43,16 @@ thaiDetect.sentence('แม่ต้องการให้ฉันไปต�
 thaiDetect.sentence('ช่วยเปิดประตูให้ฉันหน่อย') # returns { please: 2, tell: 0, refuse: 0, question: 0, command: 0, want: 0 }
 ```
 
+## List
+| Plugin | README |
+| ------ | ------ |
+| tell | บอกเล่า |
+| refuse | ปฏิเสธ |
+| question | คำถาม |
+| command | คำสั่ง |
+| want | ต้องการ |
+| please | ขอร้อง ชักชวน อนุญาต |
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
